@@ -11,7 +11,7 @@ import pyaudio
 import websockets
 
 
-API_KEY = os.getenv("GEMINI_API_KEY", "YOUR_API_KEY")
+API_KEY = os.getenv("GEMINI_API_KEY", "AIzaSyAibZxgLfoLW9KN1D3tgE-1Z3fZIJNbEYM")
 MODEL_NAME = "gemini-3.1-flash-live-preview"
 WS_URL = (
     "wss://generativelanguage.googleapis.com/ws/"
