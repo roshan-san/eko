@@ -16,7 +16,7 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
 class Settings(BaseSettings):
-    GEMINI_API_KEY: str
+    modell: str
     model_config = SettingsConfigDict(env_file=".env", env_file_encoding="utf-8")
 
 
@@ -26,7 +26,7 @@ MODEL_NAME = "gemini-3.1-flash-live-preview"
 WS_URL = (
     "wss://generativelanguage.googleapis.com/ws/"
     "google.ai.generativelanguage.v1beta.GenerativeService.BidiGenerateContent"
-    f"?key={settings.GEMINI_API_KEY}"
+    f"?key={settings.modell}"
 )
 
 # Audio formats:
